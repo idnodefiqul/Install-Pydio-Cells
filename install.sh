@@ -10,6 +10,8 @@ fi
 echo "==> Update sistem dan install dependencies dasar..."
 apt update && apt upgrade -y
 apt install -y curl wget tar jq software-properties-common
+sudo apt update && sudo apt upgrade -y
+sudo apt install wget unzip curl tar -y
 
 # Install database server pilihan user
 echo "Pilih database yang ingin digunakan:"
